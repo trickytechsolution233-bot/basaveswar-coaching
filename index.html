@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" class="lang-en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Basaveshwara Navodaya Coaching Class | M.K. Hubli</title>
+<meta name="description" content="JNVST entrance exam coaching for Class 3, 4, 5 students in M.K. Hubli. Shree Basaveshwara Navodaya Tarabeti Kendra.">
+<link rel="icon" href="https://ik.imagekit.io/2bihaekhf/Basaveshwar%20coaching/ChatGPT%20Image%20Aug%2017,%202026,%2005_50_22%20PM.png?updatedAt=1786969335232">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Noto+Sans+Kannada:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#152047;
+    --navy-2:#1e2c5e;
+    --gold:#e8a33d;
+    --gold-l:#f4c877;
+    --maroon:#a32638;
+    --cream:#faf6ec;
+    --paper:#fffdf8;
+    --ink:#221d17;
+    --ink-soft:#5b5348;
+    --line:#e6dcc6;
+    --green:#2e7d4f;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  .kn{font-family:'Noto Sans Kannada',sans-serif;}
+  h1,h2,h3,.display{font-family:'Baloo 2','Noto Sans Kannada',sans-serif;}
+
+  /* Bilingual toggling */
+  [data-en],[data-kn]{display:none;}
+  .lang-en [data-en]{display:inline;}
+  .lang-en span[data-en], .lang-en div[data-en], .lang-en p[data-en], .lang-en li[data-en]{display:inline;}
+  .lang-en block[data-en]{display:block;}
+  .lang-kn [data-kn]{display:inline;}
+  html.lang-en [data-en-b]{display:block;}
+  html.lang-en [data-kn-b]{display:none;}
+  html.lang-kn [data-kn-b]{display:block;}
+  html.lang-kn [data-en-b]{display:none;}
+  html.lang-en [data-en]{display:inline;}
+  html.lang-en [data-kn]{display:none;}
+  html.lang-kn [data-kn]{display:inline;}
+  html.lang-kn [data-en]{display:none;}
+
+  [data-en], [data-kn]{
+    transition:opacity .28s ease, filter .28s ease;
+    opacity:1; filter:blur(0);
+  }
+  html.lang-switching [data-en], html.lang-switching [data-kn]{
+    opacity:0; filter:blur(2px);
+  }
+
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 24px;}
+
+  /* ===== Top bar ===== */
+  .topbar{
+    background:var(--navy);
+    color:#dfe4f5;
+    font-size:13px;
+    padding:7px 0;
+  }
+  .topbar .wrap{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap;}
+  .topbar a{opacity:.92;}
+  .topbar a:hover{opacity:1; text-decoration:underline;}
+  .topbar .tel{display:flex; gap:16px; flex-wrap:wrap;}
+
+  /* ===== Header ===== */
+  header.site{
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+    position:sticky; top:0; z-index:50;
+  }
+  .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0;}
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand .mark{
+    width:46px; height:46px; border-radius:50%;
+    background:conic-gradient(from 220deg, var(--maroon), var(--gold), var(--navy), var(--maroon));
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 0 0 3px var(--paper), 0 0 0 4.5px var(--gold-l);
+    flex-shrink:0;
+  }
+  .brand .mark span{color:#fff; font-family:'Baloo 2'; font-weight:800; font-size:17px;}
+  .brand .name{line-height:1.15;}
+  .brand .name b{display:block; font-family:'Baloo 2'; font-size:16px; color:var(--navy); font-weight:700;}
+  .brand .name small{display:block; font-size:11.5px; letter-spacing:.06em; color:var(--ink-soft); text-transform:uppercase;}
+
+  nav.links{display:flex; align-items:center; gap:26px;}
+  nav.links a{font-size:14.5px; font-weight:600; color:var(--ink); position:relative; padding:4px 0;}
+  nav.links a::after{content:'';position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--maroon);transition:width .25s;}
+  nav.links a:hover::after{width:100%;}
+
+  .lang-toggle{
+    display:flex; border:1.5px solid var(--navy); border-radius:100px; overflow:hidden; font-size:12.5px; font-weight:700;
+  }
+  .lang-toggle button{
+    padding:7px 14px; background:var(--paper); color:var(--navy); border:none; cursor:pointer; font-family:inherit; font-weight:700; font-size:12.5px;
+  }
+  .lang-toggle button.active{background:var(--navy); color:#fff;}
+
+  .burger{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .burger span{display:block; width:24px; height:2.5px; background:var(--navy); margin:5px 0; border-radius:2px;}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    background:
+      linear-gradient(180deg, rgba(21,32,71,.35) 0%, rgba(15,23,53,.55) 100%),
+      url('https://ik.imagekit.io/2bihaekhf/WhatsApp%20Image%202026-08-09%20at%204.52.29%20PM.jpeg?updatedAt=1786275879647') center 30%/cover no-repeat;
+    color:#fff;
+    overflow:hidden;
+    padding:64px 0 90px;
+  }
+  .hero-flags{ display:none; }
+  .hero .wrap{position:relative; display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center;}
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    background:rgba(232,163,61,.16); border:1px solid rgba(232,163,61,.5);
+    color:var(--gold-l); font-size:12.5px; font-weight:700; letter-spacing:.04em;
+    padding:6px 14px; border-radius:100px; margin-bottom:22px;
+  }
+  .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold-l); animation:pulse 1.8s infinite;}
+  @keyframes pulse{0%,100%{opacity:1} 50%{opacity:.3}}
+  .hero h1{font-size:44px; line-height:1.18; font-weight:700; margin-bottom:18px;}
+  html.lang-kn .hero h1{font-size:38px; line-height:1.4;}
+  .hero h1 em{font-style:normal; color:var(--gold-l);}
+  .hero p.sub{font-size:16.5px; color:#c9d0ea; max-width:520px; line-height:1.7; margin-bottom:30px;}
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-flex; align-items:center; gap:9px;
+    padding:14px 26px; border-radius:10px; font-weight:700; font-size:14.5px;
+    cursor:pointer; border:none; font-family:inherit; transition:transform .18s, box-shadow .18s;
+  }
+  .btn:hover{transform:translateY(-2px);}
+  .btn-gold{background:var(--gold); color:#2b1a04; box-shadow:0 10px 24px -8px rgba(232,163,61,.6);}
+  .btn-ghost{background:rgba(255,255,255,.08); color:#fff; border:1.5px solid rgba(255,255,255,.35);}
+
+  .hero-stats{display:flex; gap:28px; margin-top:40px; flex-wrap:wrap;}
+  .hero-stats .stat b{display:block; font-family:'Baloo 2'; font-size:26px; color:var(--gold-l);}
+  .hero-stats .stat span{font-size:12.5px; color:#aab3d6;}
+
+  /* Hero right: badge card */
+  .hero-card{
+    background:var(--paper); border-radius:18px; padding:26px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.5);
+    color:var(--ink); position:relative;
+    transform:rotate(1.2deg);
+  }
+  .hero-card::before{
+    content:'';position:absolute; inset:8px; border:1.5px dashed var(--gold); border-radius:12px; pointer-events:none;
+  }
+  .hero-card .badge-row{display:flex; align-items:center; gap:12px; margin-bottom:16px;}
+  .hero-card .ring{
+    width:54px; height:54px; border-radius:50%; flex-shrink:0;
+    background:conic-gradient(var(--maroon),var(--gold),var(--navy),var(--maroon));
+    display:flex; align-items:center; justify-content:center;
+  }
+  .hero-card .ring i{width:44px;height:44px;border-radius:50%;background:var(--paper); display:flex;align-items:center;justify-content:center;font-family:'Baloo 2';font-weight:800; color:var(--navy); font-size:15px;}
+  .hero-card h3{font-size:16.5px; color:var(--navy); font-weight:700; margin-bottom:2px;}
+  .hero-card p.small{font-size:12.5px; color:var(--ink-soft);}
+  .hero-card .grade-row{display:flex; gap:8px; margin:18px 0;}
+  .hero-card .grade{
+    flex:1; text-align:center; background:var(--cream); border:1px solid var(--line);
+    border-radius:10px; padding:10px 4px;
+  }
+  .hero-card .grade b{display:block; font-family:'Baloo 2'; font-size:20px; color:var(--maroon);}
+  .hero-card .grade span{font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.04em;}
+  .hero-card .quote{
+    background:var(--navy); color:#fff; border-radius:10px; padding:14px 16px; font-size:13px; line-height:1.6; font-style:italic;
+  }
+
+  /* ===== Section shell ===== */
+  section{padding:84px 0;}
+  .sec-head{max-width:640px; margin:0 auto 48px; text-align:center;}
+  .sec-eyebrow{
+    display:inline-block; font-size:12.5px; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--maroon); margin-bottom:12px;
+  }
+  .sec-head h2{font-size:32px; color:var(--navy); font-weight:700; line-height:1.3; margin-bottom:14px;}
+  html.lang-kn .sec-head h2{font-size:28px; line-height:1.5;}
+  .sec-head p{color:var(--ink-soft); font-size:15.5px; line-height:1.7;}
+
+  /* ===== Journey / Steps (real sequence: class 3 -> 4 -> 5 -> exam -> admission) ===== */
+  .journey{background:var(--paper);}
+  .steps{
+    display:grid; grid-template-columns:repeat(5,1fr); gap:0; position:relative; margin-top:20px;
+  }
+  .steps::before{
+    content:''; position:absolute; top:27px; left:10%; right:10%; height:2px;
+    background:repeating-linear-gradient(90deg, var(--gold) 0 8px, transparent 8px 14px);
+  }
+  .step{text-align:center; position:relative; padding:0 8px;}
+  .step .node{
+    width:56px; height:56px; border-radius:50%; background:var(--navy); color:#fff;
+    display:flex; align-items:center; justify-content:center; margin:0 auto 16px;
+    font-family:'Baloo 2'; font-weight:700; font-size:18px; position:relative; z-index:2;
+    border:4px solid var(--paper); box-shadow:0 0 0 2px var(--navy);
+  }
+  .step:nth-child(5) .node{background:var(--maroon); box-shadow:0 0 0 2px var(--maroon);}
+  .step h4{font-size:14.5px; color:var(--navy); font-weight:700; margin-bottom:6px;}
+  .step p{font-size:12.5px; color:var(--ink-soft); line-height:1.55;}
+
+  /* ===== Why us / features ===== */
+  .why{background:var(--cream);}
+  .feat-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .feat{
+    background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:26px 22px;
+    transition:transform .2s, box-shadow .2s;
+  }
+  .feat:hover{transform:translateY(-4px); box-shadow:0 16px 32px -18px rgba(21,32,71,.3);}
+  .feat .ic{
+    width:44px; height:44px; border-radius:10px; background:linear-gradient(135deg,var(--gold-l),var(--gold));
+    display:flex; align-items:center; justify-content:center; margin-bottom:16px; font-size:20px;
+  }
+  .feat h4{font-size:16px; color:var(--navy); font-weight:700; margin-bottom:8px;}
+  .feat p{font-size:13.5px; color:var(--ink-soft); line-height:1.65;}
+
+  /* ===== Classes offered ===== */
+  .classes{background:var(--navy); color:#fff; position:relative; overflow:hidden;}
+  .classes::before{
+    content:''; position:absolute; width:520px; height:520px; border-radius:50%;
+    background:radial-gradient(circle, rgba(232,163,61,.18), transparent 70%);
+    top:-200px; right:-140px;
+  }
+  .classes .sec-head p{color:#c9d0ea;}
+  .classes .sec-head h2{color:#fff;}
+  .class-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:20px; position:relative;}
+  .class-card{
+    background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius:16px; padding:28px 24px;
+  }
+  .class-card .num{
+    font-family:'Baloo 2'; font-size:38px; font-weight:800; color:var(--gold-l); margin-bottom:8px;
+  }
+  .class-card h4{font-size:16px; font-weight:700; margin-bottom:10px;}
+  .class-card ul{list-style:none; font-size:13px; color:#c9d0ea; line-height:2;}
+  .class-card ul li::before{content:'✓ '; color:var(--gold-l); font-weight:700;}
+
+  /* ===== About / director ===== */
+  .about{background:var(--paper);}
+  .about-grid{display:grid; grid-template-columns:.9fr 1.1fr; gap:52px; align-items:center;}
+  .about-visual{
+    background:linear-gradient(160deg, var(--navy), var(--navy-2));
+    border-radius:20px; padding:38px; color:#fff; position:relative; overflow:hidden;
+  }
+  .about-visual::after{
+    content:''; position:absolute; inset:0; opacity:.12;
+    background-image:radial-gradient(circle,#fff 1.5px, transparent 1.5px);
+    background-size:16px 16px;
+  }
+  .about-visual .avatar{
+    width:88px; height:88px; border-radius:50%; margin:0 auto 18px;
+    background:conic-gradient(var(--gold),var(--maroon),var(--navy),var(--gold));
+    display:flex; align-items:center; justify-content:center; position:relative; z-index:1;
+  }
+  .about-visual .avatar i{
+    width:76px; height:76px; border-radius:50%; background:var(--navy-2); display:flex; align-items:center; justify-content:center;
+    font-family:'Baloo 2'; font-size:26px; font-weight:800; color:var(--gold-l);
+  }
+  .about-visual h3{text-align:center; font-size:18px; margin-bottom:4px; position:relative; z-index:1;}
+  .about-visual p.role{text-align:center; font-size:12.5px; color:#aab3d6; margin-bottom:22px; position:relative; z-index:1;}
+  .about-visual .contact-line{
+    display:flex; align-items:center; gap:10px; font-size:13.5px; padding:10px 0; border-top:1px solid rgba(255,255,255,.14); position:relative; z-index:1;
+  }
+  .about-copy h2{font-size:30px; color:var(--navy); font-weight:700; margin-bottom:16px; line-height:1.35;}
+  html.lang-kn .about-copy h2{font-size:26px; line-height:1.55;}
+  .about-copy p{color:var(--ink-soft); font-size:15px; line-height:1.8; margin-bottom:16px;}
+  .about-copy .pill-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:20px;}
+  .pill{
+    background:var(--cream); border:1px solid var(--line); border-radius:100px; padding:8px 16px; font-size:12.5px; font-weight:600; color:var(--navy);
+  }
+
+  /* ===== Areas served ===== */
+  .areas{background:var(--cream); text-align:center;}
+  .area-chips{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:10px;}
+  .chip{
+    background:var(--paper); border:1.5px solid var(--gold); color:var(--navy); font-weight:700; font-size:13.5px;
+    padding:10px 20px; border-radius:100px;
+  }
+
+  /* ===== CTA banner ===== */
+  .cta-banner{
+    background:linear-gradient(120deg, var(--maroon), #7d1c2a);
+    color:#fff; text-align:center; padding:64px 0;
+  }
+  .cta-banner h2{font-size:28px; margin-bottom:12px; font-weight:700;}
+  html.lang-kn .cta-banner h2{font-size:24px; line-height:1.5;}
+  .cta-banner p{color:#f3d0d6; margin-bottom:28px; font-size:15px;}
+  .cta-banner .btn-gold{box-shadow:0 12px 28px -8px rgba(0,0,0,.4);}
+
+  /* ===== Contact ===== */
+  .contact{background:var(--paper);}
+  .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px;}
+  .contact-card{
+    background:var(--navy); color:#fff; border-radius:18px; padding:36px;
+  }
+  .contact-card h3{font-size:20px; margin-bottom:22px;}
+  .cline{display:flex; gap:14px; align-items:flex-start; margin-bottom:20px;}
+  .cline .ic2{
+    width:38px; height:38px; border-radius:9px; background:rgba(232,163,61,.2); color:var(--gold-l);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:16px;
+  }
+  .cline b{display:block; font-size:14px; margin-bottom:2px;}
+  .cline span{font-size:13px; color:#c9d0ea;}
+  .cline a{color:#fff; text-decoration:underline; text-underline-offset:3px;}
+
+  .form-card{
+    background:var(--cream); border:1px solid var(--line); border-radius:18px; padding:36px;
+  }
+  .form-card h3{color:var(--navy); font-size:20px; margin-bottom:8px;}
+  .form-card p.hint{color:var(--ink-soft); font-size:13px; margin-bottom:22px;}
+  .form-card label{display:block; font-size:12.5px; font-weight:700; color:var(--navy); margin-bottom:6px; margin-top:16px;}
+  .form-card label:first-of-type{margin-top:0;}
+  .form-card input, .form-card select{
+    width:100%; padding:12px 14px; border-radius:9px; border:1.5px solid var(--line); background:var(--paper);
+    font-family:inherit; font-size:14px; color:var(--ink);
+  }
+  .form-card input:focus, .form-card select:focus{outline:2px solid var(--gold); border-color:var(--gold);}
+  .form-card .btn-gold{width:100%; justify-content:center; margin-top:22px;}
+
+  /* ===== Footer ===== */
+  footer{background:#0f1735; color:#8f97bd; padding:40px 0 24px; font-size:13px;}
+  footer .wrap{display:flex; justify-content:space-between; flex-wrap:wrap; gap:18px; align-items:center;}
+  footer .fbrand{color:#fff; font-family:'Baloo 2'; font-weight:700; font-size:15px; margin-bottom:4px;}
+  footer .fright{text-align:right;}
+  footer a{color:#c9d0ea;}
+  footer a:hover{color:#fff;}
+
+  /* ===== Floating WhatsApp ===== */
+  .wa-float{
+    position:fixed; bottom:22px; right:22px; z-index:60;
+    width:58px; height:58px; border-radius:50%; background:#25D366;
+    display:flex; align-items:center; justify-content:center; box-shadow:0 10px 26px -6px rgba(0,0,0,.45);
+    transition:transform .2s;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+  .wa-float svg{width:28px; height:28px;}
+
+  /* ===== Mobile ===== */
+  @media(max-width:920px){
+    .hero .wrap{grid-template-columns:1fr; gap:36px;}
+    .hero h1{font-size:32px;}
+    html.lang-kn .hero h1{font-size:28px;}
+    .steps{grid-template-columns:repeat(3,1fr); row-gap:32px;}
+    .steps::before{display:none;}
+    .feat-grid{grid-template-columns:1fr 1fr;}
+    .class-grid{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;}
+    .contact-grid{grid-template-columns:1fr;}
+    nav.links{display:none;}
+    .burger{display:block;}
+  }
+  @media(max-width:560px){
+    .wrap{padding:0 18px;}
+    section{padding:60px 0;}
+    .feat-grid{grid-template-columns:1fr;}
+    .steps{grid-template-columns:1fr 1fr;}
+    .hero-stats{gap:20px;}
+    .topbar .wrap{flex-direction:column; align-items:flex-start; gap:6px;}
+    footer .wrap{flex-direction:column; text-align:center;}
+    footer .fright{text-align:center;}
+  }
+
+  /* Mobile nav drawer */
+  .mobile-drawer{
+    display:none; position:fixed; inset:0; background:rgba(15,23,53,.6); z-index:70;
+  }
+  .mobile-drawer.open{display:block;}
+  .mobile-drawer .panel{
+    position:absolute; top:0; right:0; width:78%; max-width:320px; height:100%; background:var(--paper);
+    padding:26px 22px; display:flex; flex-direction:column; gap:6px;
+  }
+  .mobile-drawer .panel a{
+    padding:14px 4px; border-bottom:1px solid var(--line); font-weight:600; color:var(--navy); font-size:15px;
+  }
+  .mobile-drawer .close{align-self:flex-end; background:none; border:none; font-size:22px; color:var(--navy); cursor:pointer; margin-bottom:10px;}
+
+  /* ===== Loader ===== */
+  #loader{
+    position:fixed; inset:0; z-index:9999;
+    background:linear-gradient(160deg, var(--navy), var(--navy-2));
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;
+    transition:opacity .5s ease, visibility .5s ease;
+  }
+  #loader.hide{opacity:0; visibility:hidden;}
+  #loader .logo-wrap{
+    width:92px; height:92px; border-radius:50%;
+    background:conic-gradient(var(--gold),var(--maroon),var(--navy),var(--gold));
+    display:flex; align-items:center; justify-content:center;
+    animation:spin 2s linear infinite;
+  }
+  #loader .logo-wrap img{
+    width:80px; height:80px; border-radius:50%; object-fit:cover; background:var(--paper);
+    animation:spin-rev 2s linear infinite;
+  }
+  @keyframes spin{ to{ transform:rotate(360deg); } }
+  @keyframes spin-rev{ to{ transform:rotate(-360deg); } }
+  #loader .ltext{
+    color:#fff; font-family:'Baloo 2'; font-weight:700; font-size:15px; letter-spacing:.02em; text-align:center;
+  }
+  #loader .ltext small{display:block; font-weight:500; font-size:11.5px; color:#aab3d6; margin-top:4px; letter-spacing:.04em;}
+  body.loading{overflow:hidden;}
+</style>
+</head>
+<body class="loading">
+
+<!-- ===== Loading screen ===== -->
+<div id="loader">
+  <div class="logo-wrap">
+    <img src="https://ik.imagekit.io/2bihaekhf/Basaveshwar%20coaching/file_00000000ed7c820888c501fa7b99b0ae.png?updatedAt=1787046418162" alt="Logo">
+  </div>
+  <div class="ltext">Shree Basaveshwara Navodaya<small>ಶ್ರೀ ಬಸವೇಶ್ವರ ನವೋದಯ ಕೋಚಿಂಗ್ ಕ್ಲಾಸ್</small></div>
+</div>
+
+<!-- ===== Top bar ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tel">
+      <a href="tel:+919620098708">📞 96200 98708</a>
+      <a href="tel:+916360381803">📞 6360381803</a>
+    </div>
+    <div>
+      <span data-en>M.K. Hubli, Karnataka</span>
+      <span data-kn class="kn">ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="site">
+  <div class="wrap nav">
+    <div class="brand">
+      <div class="mark"><img src="https://ik.imagekit.io/2bihaekhf/Basaveshwar%20coaching/file_00000000ed7c820888c501fa7b99b0ae.png?updatedAt=1787046418162" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+      <div class="name">
+        <b><span data-en>Shree Basaveshwara</span><span data-kn class="kn">ಶ್ರೀ ಬಸವೇಶ್ವರ</span></b>
+        <small><span data-en>Navodaya Coaching Class</span><span data-kn class="kn">ನವೋದಯ ಕೋಚಿಂಗ್ ಕ್ಲಾಸ್</span></small>
+      </div>
+    </div>
+    <nav class="links">
+      <a href="#journey"><span data-en>Program</span><span data-kn class="kn">ಕಾರ್ಯಕ್ರಮ</span></a>
+      <a href="#why"><span data-en>Why Us</span><span data-kn class="kn">ಏಕೆ ನಾವು</span></a>
+      <a href="#classes"><span data-en>Classes</span><span data-kn class="kn">ತರಗತಿಗಳು</span></a>
+      <a href="#about"><span data-en>About</span><span data-kn class="kn">ನಮ್ಮ ಬಗ್ಗೆ</span></a>
+      <a href="#contact"><span data-en>Contact</span><span data-kn class="kn">ಸಂಪರ್ಕ</span></a>
+    </nav>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <div class="lang-toggle">
+        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button id="btn-kn" onclick="setLang('kn')">ಕನ್ನಡ</button>
+      </div>
+      <button class="burger" onclick="document.getElementById('drawer').classList.add('open')">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="mobile-drawer" id="drawer">
+  <div class="panel">
+    <button class="close" onclick="document.getElementById('drawer').classList.remove('open')">✕</button>
+    <a href="#journey" onclick="document.getElementById('drawer').classList.remove('open')"><span data-en>Program</span><span data-kn class="kn">ಕಾರ್ಯಕ್ರಮ</span></a>
+    <a href="#why" onclick="document.getElementById('drawer').classList.remove('open')"><span data-en>Why Us</span><span data-kn class="kn">ಏಕೆ ನಾವು</span></a>
+    <a href="#classes" onclick="document.getElementById('drawer').classList.remove('open')"><span data-en>Classes</span><span data-kn class="kn">ತರಗತಿಗಳು</span></a>
+    <a href="#about" onclick="document.getElementById('drawer').classList.remove('open')"><span data-en>About</span><span data-kn class="kn">ನಮ್ಮ ಬಗ್ಗೆ</span></a>
+    <a href="#contact" onclick="document.getElementById('drawer').classList.remove('open')"><span data-en>Contact</span><span data-kn class="kn">ಸಂಪರ್ಕ</span></a>
+  </div>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>
+        <span data-en>Admissions Open · Class 3, 4 & 5</span>
+        <span data-kn class="kn">ಪ್ರವೇಶ ಪ್ರಾರಂಭ · 3, 4, 5ನೇ ತರಗತಿ</span>
+      </div>
+      <h1>
+        <span data-en>Every talented child deserves a seat at <em>Navodaya</em>.</span>
+        <span data-kn class="kn">ಪ್ರತಿಭಾವಂತ ಮಗುವಿಗೂ <em>ನವೋದಯ</em>ದಲ್ಲಿ ಒಂದು ಸ್ಥಾನ ಸಿಗಲಿ.</span>
+      </h1>
+      <p class="sub">
+        <span data-en>Focused JNVST entrance exam coaching in M.K. Hubli — helping village and town children from Class 3 crack the Jawahar Navodaya Vidyalaya selection test with confidence.</span>
+        <span data-kn class="kn">ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ಪ್ರವೇಶ ಪರೀಕ್ಷೆಗಾಗಿ ವಿಶೇಷ ತರಬೇತಿ — ಗ್ರಾಮ ಮತ್ತು ಪಟ್ಟಣದ ಮಕ್ಕಳಿಗೆ 3ನೇ ತರಗತಿಯಿಂದಲೇ ಜವಹಾರ್ ನವೋದಯ ವಿದ್ಯಾಲಯ ಆಯ್ಕೆ ಪರೀಕ್ಷೆಯನ್ನು ಆತ್ಮವಿಶ್ವಾಸದಿಂದ ಎದುರಿಸಲು ಸಹಾಯ.</span>
+      </p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="https://wa.me/919620098708?text=Namaskara%2C%20I%20want%20to%20know%20more%20about%20Navodaya%20coaching%20admission." target="_blank" rel="noopener">
+          💬 <span data-en>Enquire on WhatsApp</span><span data-kn class="kn">ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ವಿಚಾರಿಸಿ</span>
+        </a>
+        <a class="btn btn-ghost" href="tel:+919620098708">
+          📞 <span data-en>Call Now</span><span data-kn class="kn">ಈಗಲೇ ಕರೆ ಮಾಡಿ</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>3, 4, 5</b><span data-en>Standards Taught</span><span data-kn class="kn">ಬೋಧಿಸುವ ತರಗತಿಗಳು</span></div>
+        <div class="stat"><b>JNVST</b><span data-en>Exam Focus</span><span data-kn class="kn">ಪರೀಕ್ಷಾ ಕೇಂದ್ರಬಿಂದು</span></div>
+        <div class="stat"><b>2</b><span data-en>Direct Helpline Numbers</span><span data-kn class="kn">ನೇರ ಸಹಾಯವಾಣಿ ಸಂಖ್ಯೆಗಳು</span></div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="badge-row">
+        <div class="ring"><i style="padding:0; overflow:hidden;"><img src="https://ik.imagekit.io/2bihaekhf/Basaveshwar%20coaching/ChatGPT%20Image%20Aug%2017,%202026,%2005_50_22%20PM.png?updatedAt=1786969335232" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></i></div>
+        <div>
+          <h3><span data-en>Navodaya Tarabeti Kendra</span><span data-kn class="kn">ನವೋದಯ ತರಬೇತಿ ಕೇಂದ್ರ</span></h3>
+          <p class="small"><span data-en>M.K. Hubli entrance coaching center</span><span data-kn class="kn">ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿ ಪ್ರವೇಶ ತರಬೇತಿ ಕೇಂದ್ರ</span></p>
+        </div>
+      </div>
+      <div class="grade-row">
+        <div class="grade"><b>3</b><span data-en>Std</span><span data-kn class="kn">ತರಗತಿ</span></div>
+        <div class="grade"><b>4</b><span data-en>Std</span><span data-kn class="kn">ತರಗತಿ</span></div>
+        <div class="grade"><b>5</b><span data-en>Std</span><span data-kn class="kn">ತರಗತಿ</span></div>
+      </div>
+      <div class="quote">
+        <span data-en>"ಬಡತನ ಎಂದಿಗೂ ಪ್ರತಿಭೆಗೆ ಅಡ್ಡಿಯಾಗಬಾರದು" — no talented child should be held back for lack of opportunity.</span>
+        <span data-kn class="kn">"ಬಡತನ ಎಂದಿಗೂ ಪ್ರತಿಭೆಗೆ ಅಡ್ಡಿಯಾಗಬಾರದು" — ಅವಕಾಶದ ಕೊರತೆಯಿಂದ ಯಾವ ಪ್ರತಿಭಾವಂತ ಮಗುವೂ ಹಿಂದೆ ಉಳಿಯಬಾರದು.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Journey ===== -->
+<section class="journey" id="journey">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow"><span data-en>The Path to Navodaya</span><span data-kn class="kn">ನವೋದಯದ ಹಾದಿ</span></span>
+      <h2><span data-en>Five steps from your village school to a national residential school</span><span data-kn class="kn">ನಿಮ್ಮ ಗ್ರಾಮದ ಶಾಲೆಯಿಂದ ರಾಷ್ಟ್ರೀಯ ವಸತಿ ಶಾಲೆಯವರೆಗಿನ ಐದು ಹಂತಗಳು</span></h2>
+      <p><span data-en>We prepare children in a structured, year-by-year sequence so nothing is rushed and every concept is solid before the exam.</span><span data-kn class="kn">ಯಾವುದೂ ಅವಸರವಾಗದಂತೆ, ಪರೀಕ್ಷೆಗೆ ಮೊದಲು ಪ್ರತಿ ಪರಿಕಲ್ಪನೆಯೂ ಗಟ್ಟಿಯಾಗಿ ಇರುವಂತೆ ನಾವು ಮಕ್ಕಳನ್ನು ವರ್ಷದಿಂದ ವರ್ಷಕ್ಕೆ ಸಿದ್ಧಪಡಿಸುತ್ತೇವೆ.</span></p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="node">1</div>
+        <h4><span data-en>Class 3 Foundation</span><span data-kn class="kn">3ನೇ ತರಗತಿ ಬುನಾದಿ</span></h4>
+        <p><span data-en>Reasoning, basic maths & language habits begin early.</span><span data-kn class="kn">ತರ್ಕ, ಮೂಲ ಗಣಿತ ಮತ್ತು ಭಾಷಾ ಅಭ್ಯಾಸ ಆರಂಭ.</span></p>
+      </div>
+      <div class="step">
+        <div class="node">2</div>
+        <h4><span data-en>Class 4 Build-up</span><span data-kn class="kn">4ನೇ ತರಗತಿ ವೃದ್ಧಿ</span></h4>
+        <p><span data-en>Speed, accuracy and mental maths practice.</span><span data-kn class="kn">ವೇಗ, ನಿಖರತೆ ಮತ್ತು ಮಾನಸಿಕ ಗಣಿತ ಅಭ್ಯಾಸ.</span></p>
+      </div>
+      <div class="step">
+        <div class="node">3</div>
+        <h4><span data-en>Class 5 Exam Prep</span><span data-kn class="kn">5ನೇ ತರಗತಿ ಪರೀಕ್ಷಾ ಸಿದ್ಧತೆ</span></h4>
+        <p><span data-en>Full JNVST pattern practice & mock tests.</span><span data-kn class="kn">ಸಂಪೂರ್ಣ ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ಮಾದರಿ ಅಭ್ಯಾಸ ಮತ್ತು ಮಾಕ್ ಟೆಸ್ಟ್.</span></p>
+      </div>
+      <div class="step">
+        <div class="node">4</div>
+        <h4><span data-en>JNVST Exam</span><span data-kn class="kn">ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ಪರೀಕ್ಷೆ</span></h4>
+        <p><span data-en>Mental ability, arithmetic & language test.</span><span data-kn class="kn">ಮಾನಸಿಕ ಸಾಮರ್ಥ್ಯ, ಅಂಕಗಣಿತ ಮತ್ತು ಭಾಷಾ ಪರೀಕ್ಷೆ.</span></p>
+      </div>
+      <div class="step">
+        <div class="node">5</div>
+        <h4><span data-en>Navodaya Admission</span><span data-kn class="kn">ನವೋದಯ ಪ್ರವೇಶ</span></h4>
+        <p><span data-en>Free, quality residential education secured.</span><span data-kn class="kn">ಉಚಿತ, ಗುಣಮಟ್ಟದ ವಸತಿ ಶಿಕ್ಷಣ ಖಚಿತ.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Why us ===== -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow"><span data-en>Why Families Choose Us</span><span data-kn class="kn">ಕುಟುಂಬಗಳು ನಮ್ಮನ್ನೇ ಆಯ್ಕೆ ಮಾಡಲು ಕಾರಣ</span></span>
+      <h2><span data-en>Coaching built around how the JNVST is actually tested</span><span data-kn class="kn">ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ಪರೀಕ್ಷೆಯ ನೈಜ ಮಾದರಿಗೆ ಅನುಗುಣವಾದ ತರಬೇತಿ</span></h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat">
+        <div class="ic">🧠</div>
+        <h4><span data-en>Mental Ability Drills</span><span data-kn class="kn">ಮಾನಸಿಕ ಸಾಮರ್ಥ್ಯ ಅಭ್ಯಾಸ</span></h4>
+        <p><span data-en>Daily pattern, figure and reasoning practice — the section that decides most JNVST results.</span><span data-kn class="kn">ದೈನಂದಿನ ಮಾದರಿ, ಚಿತ್ರ ಮತ್ತು ತರ್ಕ ಅಭ್ಯಾಸ — ಬಹುತೇಕ ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ಫಲಿತಾಂಶವನ್ನು ನಿರ್ಧರಿಸುವ ವಿಭಾಗ.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic">📝</div>
+        <h4><span data-en>Weekly Mock Tests</span><span data-kn class="kn">ವಾರದ ಮಾಕ್ ಟೆಸ್ಟ್</span></h4>
+        <p><span data-en>Timed practice papers so exam day feels familiar, not frightening.</span><span data-kn class="kn">ಪರೀಕ್ಷೆಯ ದಿನ ಪರಿಚಿತವಾಗಿರಲು, ಭಯವಾಗದಂತೆ ಸಮಯಬದ್ಧ ಅಭ್ಯಾಸ ಪತ್ರಿಕೆಗಳು.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic">👨‍👩‍👧</div>
+        <h4><span data-en>Small Batch Sizes</span><span data-kn class="kn">ಸಣ್ಣ ಬ್ಯಾಚ್ ಗಾತ್ರ</span></h4>
+        <p><span data-en>Personal attention for every child, with regular parent updates.</span><span data-kn class="kn">ಪ್ರತಿ ಮಗುವಿಗೂ ವೈಯಕ್ತಿಕ ಗಮನ, ನಿಯಮಿತ ಪೋಷಕರ ಮಾಹಿತಿ.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic">📚</div>
+        <h4><span data-en>Class-wise Material</span><span data-kn class="kn">ತರಗತಿವಾರು ಅಧ್ಯಯನ ಸಾಮಗ್ರಿ</span></h4>
+        <p><span data-en>Structured notes and worksheets suited to Class 3, 4 and 5 levels.</span><span data-kn class="kn">3, 4 ಮತ್ತು 5ನೇ ತರಗತಿ ಮಟ್ಟಕ್ಕೆ ಸೂಕ್ತವಾದ ರಚನಾತ್ಮಕ ಟಿಪ್ಪಣಿ ಮತ್ತು ವರ್ಕ್‌ಶೀಟ್‌ಗಳು.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic">🗣️</div>
+        <h4><span data-en>Kannada + English Medium</span><span data-kn class="kn">ಕನ್ನಡ + ಇಂಗ್ಲಿಷ್ ಮಾಧ್ಯಮ</span></h4>
+        <p><span data-en>Concepts explained in the language each child is most comfortable with.</span><span data-kn class="kn">ಪ್ರತಿ ಮಗುವಿಗೆ ಅನುಕೂಲಕರ ಭಾಷೆಯಲ್ಲಿ ಪರಿಕಲ್ಪನೆಗಳ ವಿವರಣೆ.</span></p>
+      </div>
+      <div class="feat">
+        <div class="ic">📍</div>
+        <h4><span data-en>Local & Trusted</span><span data-kn class="kn">ಸ್ಥಳೀಯ ಮತ್ತು ವಿಶ್ವಾಸಾರ್ಹ</span></h4>
+        <p><span data-en>Based in M.K. Hubli, serving nearby villages and towns for years.</span><span data-kn class="kn">ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿದ್ದು, ಹಲವು ವರ್ಷಗಳಿಂದ ಸುತ್ತಮುತ್ತಲಿನ ಗ್ರಾಮ ಮತ್ತು ಪಟ್ಟಣಗಳಿಗೆ ಸೇವೆ.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Classes offered ===== -->
+<section class="classes" id="classes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow" style="color:var(--gold-l);"><span data-en>Batches Available</span><span data-kn class="kn">ಲಭ್ಯವಿರುವ ಬ್ಯಾಚ್‌ಗಳು</span></span>
+      <h2><span data-en>Classes offered this year</span><span data-kn class="kn">ಈ ವರ್ಷ ನಡೆಸುತ್ತಿರುವ ತರಗತಿಗಳು</span></h2>
+    </div>
+    <div class="class-grid">
+      <div class="class-card">
+        <div class="num">3</div>
+        <h4><span data-en>Standard 3</span><span data-kn class="kn">3ನೇ ತರಗತಿ</span></h4>
+        <ul>
+          <li><span data-en>Reading & comprehension</span><span data-kn class="kn">ಓದು ಮತ್ತು ಗ್ರಹಿಕೆ</span></li>
+          <li><span data-en>Basic number sense</span><span data-kn class="kn">ಮೂಲ ಸಂಖ್ಯಾ ಜ್ಞಾನ</span></li>
+          <li><span data-en>Pattern recognition</span><span data-kn class="kn">ಮಾದರಿ ಗುರುತಿಸುವಿಕೆ</span></li>
+        </ul>
+      </div>
+      <div class="class-card">
+        <div class="num">4</div>
+        <h4><span data-en>Standard 4</span><span data-kn class="kn">4ನೇ ತರಗತಿ</span></h4>
+        <ul>
+          <li><span data-en>Mental maths speed drills</span><span data-kn class="kn">ಮಾನಸಿಕ ಗಣಿತ ವೇಗ ಅಭ್ಯಾಸ</span></li>
+          <li><span data-en>Language & grammar</span><span data-kn class="kn">ಭಾಷೆ ಮತ್ತು ವ್ಯಾಕರಣ</span></li>
+          <li><span data-en>Reasoning basics</span><span data-kn class="kn">ತರ್ಕದ ಮೂಲಗಳು</span></li>
+        </ul>
+      </div>
+      <div class="class-card">
+        <div class="num">5</div>
+        <h4><span data-en>Standard 5 — JNVST Batch</span><span data-kn class="kn">5ನೇ ತರಗತಿ — ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ಬ್ಯಾಚ್</span></h4>
+        <ul>
+          <li><span data-en>Full syllabus revision</span><span data-kn class="kn">ಪೂರ್ಣ ಪಠ್ಯಕ್ರಮ ಪುನರಾವರ್ತನೆ</span></li>
+          <li><span data-en>Weekly mock exams</span><span data-kn class="kn">ವಾರದ ಮಾಕ್ ಪರೀಕ್ಷೆಗಳು</span></li>
+          <li><span data-en>OMR sheet practice</span><span data-kn class="kn">OMR ಶೀಟ್ ಅಭ್ಯಾಸ</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-visual">
+      <div class="avatar"><i style="padding:0; overflow:hidden;"><img src="https://ik.imagekit.io/2bihaekhf/Basaveshwar%20coaching/ChatGPT%20Image%20Aug%2017,%202026,%2005_50_22%20PM.png?updatedAt=1786969335232" alt="Logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></i></div>
+      <h3><span data-en>Shree V. J. Kavalagi</span><span data-kn class="kn">ಶ್ರೀ ವಿ. ಜೆ. ಕವಲಗಿ</span></h3>
+      <p class="role"><span data-en>Founder & Coordinator</span><span data-kn class="kn">ಸಂಸ್ಥಾಪಕರು ಮತ್ತು ಸಂಯೋಜಕರು</span></p>
+      <div class="contact-line">📞 <span>+91 96200 98708</span></div>
+      <div class="contact-line">📞 <span>+91 63603 81803</span></div>
+      <div class="contact-line">📍 <span data-en>M.K. Hubli, Karnataka</span><span data-kn class="kn">ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ</span></div>
+    </div>
+    <div class="about-copy">
+      <h2><span data-en>A coaching center built for one goal — a Navodaya seat</span><span data-kn class="kn">ಒಂದೇ ಗುರಿಗಾಗಿ ಕಟ್ಟಿದ ತರಬೇತಿ ಕೇಂದ್ರ — ನವೋದಯದ ಸ್ಥಾನ</span></h2>
+      <p><span data-en>Shree Basaveshwara Navodaya Coaching Class runs the Shree Basaveshwara Navodaya Tarabeti Kendra in M.K. Hubli, preparing Class 3, 4 and 5 students for the Jawahar Navodaya Vidyalaya Selection Test (JNVST).</span>
+      <span data-kn class="kn">ಶ್ರೀ ಬಸವೇಶ್ವರ ನವೋದಯ ಕೋಚಿಂಗ್ ಕ್ಲಾಸ್ ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿಯಲ್ಲಿ ಶ್ರೀ ಬಸವೇಶ್ವರ ನವೋದಯ ತರಬೇತಿ ಕೇಂದ್ರವನ್ನು ನಡೆಸುತ್ತಿದ್ದು, 3, 4 ಮತ್ತು 5ನೇ ತರಗತಿ ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಜವಹಾರ್ ನವೋದಯ ವಿದ್ಯಾಲಯ ಆಯ್ಕೆ ಪರೀಕ್ಷೆ (ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ) ಗಾಗಿ ಸಿದ್ಧಪಡಿಸುತ್ತದೆ.</span></p>
+      <p><span data-en>Under the guidance of Shree V. J. Kavalagi, the center has trained students from nearby government and private schools, focusing on discipline, daily practice, and exam temperament — not just textbook knowledge.</span>
+      <span data-kn class="kn">ಶ್ರೀ ವಿ. ಜೆ. ಕವಲಗಿ ಅವರ ಮಾರ್ಗದರ್ಶನದಲ್ಲಿ, ಈ ಕೇಂದ್ರವು ಸುತ್ತಮುತ್ತಲಿನ ಸರ್ಕಾರಿ ಮತ್ತು ಖಾಸಗಿ ಶಾಲೆಗಳ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ತರಬೇತಿ ನೀಡಿದ್ದು, ಕೇವಲ ಪಠ್ಯಪುಸ್ತಕ ಜ್ಞಾನಕ್ಕೆ ಸೀಮಿತವಾಗದೆ ಶಿಸ್ತು, ದೈನಂದಿನ ಅಭ್ಯಾಸ ಮತ್ತು ಪರೀಕ್ಷಾ ಮನೋಭಾವದ ಮೇಲೆ ಗಮನ ಹರಿಸುತ್ತದೆ.</span></p>
+      <div class="pill-row">
+        <span class="pill"><span data-en>JNVST Specialists</span><span data-kn class="kn">ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ತಜ್ಞರು</span></span>
+        <span class="pill"><span data-en>Bilingual Teaching</span><span data-kn class="kn">ದ್ವಿಭಾಷಾ ಬೋಧನೆ</span></span>
+        <span class="pill"><span data-en>Regular Mock Tests</span><span data-kn class="kn">ನಿಯಮಿತ ಮಾಕ್ ಟೆಸ್ಟ್</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Areas served ===== -->
+<section class="areas">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:24px;">
+      <span class="sec-eyebrow"><span data-en>Serving Nearby Areas</span><span data-kn class="kn">ಸಮೀಪದ ಪ್ರದೇಶಗಳಿಗೆ ಸೇವೆ</span></span>
+      <h2><span data-en>Students welcome from across the region</span><span data-kn class="kn">ಈ ಪ್ರದೇಶದಾದ್ಯಂತ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸ್ವಾಗತ</span></h2>
+    </div>
+    <div class="area-chips">
+      <span class="chip">M.K. Hubli</span>
+      <span class="chip"><span data-en>Salhalli</span><span data-kn class="kn">ಸಲಹಳ್ಳಿ</span></span>
+      <span class="chip"><span data-en>Vijayapura</span><span data-kn class="kn">ವಿಜಯಪುರ</span></span>
+      <span class="chip"><span data-en>Kodagu</span><span data-kn class="kn">ಕೊಡಗು</span></span>
+      <span class="chip"><span data-en>Nearby Villages</span><span data-kn class="kn">ಸುತ್ತಮುತ್ತಲಿನ ಗ್ರಾಮಗಳು</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA banner ===== -->
+<section class="cta-banner">
+  <div class="wrap">
+    <h2><span data-en>Seats fill up fast every batch — enquire today</span><span data-kn class="kn">ಪ್ರತಿ ಬ್ಯಾಚ್‌ನಲ್ಲೂ ಸೀಟುಗಳು ಬೇಗ ತುಂಬುತ್ತವೆ — ಇಂದೇ ವಿಚಾರಿಸಿ</span></h2>
+    <p><span data-en>Message us on WhatsApp with your child's name and class to reserve a spot.</span><span data-kn class="kn">ನಿಮ್ಮ ಮಗುವಿನ ಹೆಸರು ಮತ್ತು ತರಗತಿಯೊಂದಿಗೆ ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಸಂದೇಶ ಕಳುಹಿಸಿ, ಸ್ಥಾನ ಕಾಯ್ದಿರಿಸಿ.</span></p>
+    <a class="btn btn-gold" href="https://wa.me/919620098708?text=Namaskara%2C%20I%20want%20to%20enroll%20my%20child%20for%20Navodaya%20coaching." target="_blank" rel="noopener">
+      💬 <span data-en>Reserve a Seat on WhatsApp</span><span data-kn class="kn">ವಾಟ್ಸಾಪ್‌ನಲ್ಲಿ ಸ್ಥಾನ ಕಾಯ್ದಿರಿಸಿ</span>
+    </a>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow"><span data-en>Get in Touch</span><span data-kn class="kn">ಸಂಪರ್ಕಿಸಿ</span></span>
+      <h2><span data-en>Visit, call or message us</span><span data-kn class="kn">ಭೇಟಿ ನೀಡಿ, ಕರೆ ಮಾಡಿ ಅಥವಾ ಸಂದೇಶ ಕಳುಹಿಸಿ</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3><span data-en>Contact Details</span><span data-kn class="kn">ಸಂಪರ್ಕ ವಿವರಗಳು</span></h3>
+        <div class="cline">
+          <div class="ic2">📞</div>
+          <div><b><span data-en>Call / WhatsApp</span><span data-kn class="kn">ಕರೆ / ವಾಟ್ಸಾಪ್</span></b>
+            <span><a href="tel:+919620098708">+91 96200 98708</a> &nbsp;·&nbsp; <a href="tel:+916360381803">+91 63603 81803</a></span></div>
+        </div>
+        <div class="cline">
+          <div class="ic2">👤</div>
+          <div><b><span data-en>Coordinator</span><span data-kn class="kn">ಸಂಯೋಜಕರು</span></b>
+            <span><span data-en>Shree V. J. Kavalagi</span><span data-kn class="kn">ಶ್ರೀ ವಿ. ಜೆ. ಕವಲಗಿ</span></span></div>
+        </div>
+        <div class="cline">
+          <div class="ic2">📍</div>
+          <div><b><span data-en>Center Location</span><span data-kn class="kn">ಕೇಂದ್ರದ ಸ್ಥಳ</span></b>
+            <span><span data-en>Shree Basaveshwara Navodaya Tarabeti Kendra, M.K. Hubli, Karnataka</span><span data-kn class="kn">ಶ್ರೀ ಬಸವೇಶ್ವರ ನವೋದಯ ತರಬೇತಿ ಕೇಂದ್ರ, ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ</span></span></div>
+        </div>
+        <div class="cline">
+          <div class="ic2">🕒</div>
+          <div><b><span data-en>Batch Timings</span><span data-kn class="kn">ಬ್ಯಾಚ್ ಸಮಯ</span></b>
+            <span><span data-en>Contact us for current batch schedule</span><span data-kn class="kn">ಪ್ರಸ್ತುತ ಬ್ಯಾಚ್ ವೇಳಾಪಟ್ಟಿಗಾಗಿ ಸಂಪರ್ಕಿಸಿ</span></span></div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3><span data-en>Quick Enquiry</span><span data-kn class="kn">ತ್ವರಿತ ವಿಚಾರಣೆ</span></h3>
+        <p class="hint"><span data-en>Fill this and we'll open WhatsApp with your details ready to send.</span><span data-kn class="kn">ಇದನ್ನು ಭರ್ತಿ ಮಾಡಿ, ನಿಮ್ಮ ವಿವರಗಳೊಂದಿಗೆ ವಾಟ್ಸಾಪ್ ತೆರೆಯುತ್ತೇವೆ.</span></p>
+        <label><span data-en>Parent's Name</span><span data-kn class="kn">ಪೋಷಕರ ಹೆಸರು</span></label>
+        <input type="text" id="pname" placeholder="Enter name">
+        <label><span data-en>Child's Class</span><span data-kn class="kn">ಮಗುವಿನ ತರಗತಿ</span></label>
+        <select id="pclass">
+          <option value="Class 3">Class 3</option>
+          <option value="Class 4">Class 4</option>
+          <option value="Class 5">Class 5</option>
+        </select>
+        <label><span data-en>Your Phone Number</span><span data-kn class="kn">ನಿಮ್ಮ ಫೋನ್ ಸಂಖ್ಯೆ</span></label>
+        <input type="tel" id="pphone" placeholder="10-digit mobile number">
+        <button class="btn btn-gold" onclick="sendEnquiry()">
+          💬 <span data-en>Send via WhatsApp</span><span data-kn class="kn">ವಾಟ್ಸಾಪ್ ಮೂಲಕ ಕಳುಹಿಸಿ</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="wrap">
+    <div>
+      <div class="fbrand"><span data-en>Shree Basaveshwara Navodaya Coaching Class</span><span data-kn class="kn">ಶ್ರೀ ಬಸವೇಶ್ವರ ನವೋದಯ ಕೋಚಿಂಗ್ ಕ್ಲಾಸ್</span></div>
+      <div><span data-en>M.K. Hubli, Karnataka · JNVST Coaching for Class 3, 4 & 5</span><span data-kn class="kn">ಎಂ.ಕೆ.ಹುಬ್ಬಳ್ಳಿ, ಕರ್ನಾಟಕ · 3, 4, 5ನೇ ತರಗತಿಗೆ ಜೆಎನ್‌ವಿಎಸ್‌ಟಿ ತರಬೇತಿ</span></div>
+    </div>
+    <div class="fright">
+      <div><a href="tel:+919620098708">96200 98708</a> · <a href="tel:+916360381803">6360381803</a></div>
+      <div style="margin-top:4px;">© <span id="year"></span> Shree Basaveshwara Navodaya Coaching Class</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/919620098708?text=Namaskara%2C%20I%20want%20to%20know%20more%20about%20Navodaya%20coaching." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 32 32" fill="#fff"><path d="M16.001 2.667c-7.364 0-13.334 5.97-13.334 13.333 0 2.353.615 4.66 1.786 6.688L2.667 29.333l6.83-1.762a13.27 13.27 0 0 0 6.504 1.699h.006c7.363 0 13.333-5.97 13.333-13.333S23.364 2.667 16.001 2.667zm0 24.4h-.005a11.07 11.07 0 0 1-5.64-1.545l-.405-.24-4.053 1.046 1.08-3.95-.264-.406a11.05 11.05 0 0 1-1.693-5.905c0-6.114 4.976-11.09 11.093-11.09 2.964 0 5.75 1.155 7.843 3.25a11.02 11.02 0 0 1 3.246 7.845c0 6.114-4.977 11.09-11.09 11.09zm6.083-8.307c-.334-.167-1.976-.975-2.282-1.086-.306-.112-.529-.167-.751.167-.223.334-.863 1.086-1.058 1.309-.195.223-.39.25-.723.084-.334-.167-1.41-.52-2.686-1.657-.993-.886-1.663-1.98-1.858-2.313-.195-.334-.021-.514.146-.68.15-.15.334-.39.5-.585.167-.195.223-.334.334-.557.111-.223.056-.418-.028-.585-.084-.167-.751-1.81-1.029-2.48-.271-.652-.546-.564-.751-.574l-.64-.011c-.223 0-.585.084-.891.418s-1.17 1.143-1.17 2.788 1.198 3.236 1.364 3.459c.167.223 2.357 3.6 5.71 5.048.798.344 1.42.55 1.905.704.8.254 1.529.218 2.105.132.642-.096 1.976-.808 2.254-1.588.278-.78.278-1.448.195-1.588-.084-.14-.306-.223-.64-.39z"/></svg>
+</a>
+
+<script>
+  window.addEventListener('load', function(){
+    setTimeout(function(){
+      var loader = document.getElementById('loader');
+      loader.classList.add('hide');
+      document.body.classList.remove('loading');
+      setTimeout(function(){ loader.style.display = 'none'; }, 600);
+    }, 2000);
+  });
+
+  function setLang(lang){
+    var html = document.documentElement;
+    var already = html.classList.contains('lang-' + lang);
+    if(already) return;
+    html.classList.add('lang-switching');
+    setTimeout(function(){
+      html.classList.remove('lang-en','lang-kn');
+      html.classList.add('lang-' + lang);
+      document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+      document.getElementById('btn-kn').classList.toggle('active', lang === 'kn');
+      try{ localStorage.setItem('sbn_lang', lang); }catch(e){}
+      requestAnimationFrame(function(){
+        html.classList.remove('lang-switching');
+      });
+    }, 180);
+  }
+  (function(){
+    var saved = null;
+    try{ saved = localStorage.getItem('sbn_lang'); }catch(e){}
+    if(saved === 'kn'){ setLang('kn'); }
+  })();
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  function sendEnquiry(){
+    var name = document.getElementById('pname').value.trim();
+    var cls = document.getElementById('pclass').value;
+    var phone = document.getElementById('pphone').value.trim();
+    var msg = "Namaskara, I want to enroll my child for Navodaya coaching.%0A" +
+      "Parent Name: " + encodeURIComponent(name || '-') +
+      "%0AChild's Class: " + encodeURIComponent(cls) +
+      "%0AContact Number: " + encodeURIComponent(phone || '-');
+    window.open("https://wa.me/919620098708?text=" + msg, "_blank");
+  }
+</script>
+
+</body>
+</html>
